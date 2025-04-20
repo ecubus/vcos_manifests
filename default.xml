@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <notice>Open HALOOS From LiXiang</notice>
+  <remote fetch="." name="origin" />
+  <default remote="origin" revision="master" sync-j="8" />
+
+  <!-- haloos introduction repo -->
+  <project name="docs"                              path="docs" />
+  <!-- haloos common repos -->
+  <project name="apps_rt_demo"                      path="apps/rt_demo" >
+      <linkfile src="." dest="vcos/examples/rt_demo" />
+  </project>
+  <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" >
+      <linkfile src="." dest="vcos/examples/vbslite_demo" />
+  </project>
+  <project name="build"                             path="build" />
+  <project name="tools_halo_trace"                  path="tools/halo_trace" />
+
+  <!-- vcos open project repos -->
+  <project name="vcos_components"                   path="vcos/components" />
+  <project name="vcos_components_runtime"           path="vcos/components/runtime" />
+  <project name="vcos_components_communication"     path="vcos/components/communication" />
+  <project name="vcos_components_configs"           path="vcos/components/configs" />
+  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" />
+  <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
+  <project name="vcos_components_memory"            path="vcos/components/memory" />
+  <project name="vcos_components_include"           path="vcos/components/include" />
+  <project name="vcos_apps"                         path="vcos/apps" />
+  <project name="vcos_build"                        path="vcos/build" />
+  <project name="vcos_drivers"                      path="vcos/drivers" />
+  <project name="vcos_studio"                       path="vcos/vcos_studio" />
+  <project name="vcos_tests"                        path="vcos/tests" />
+  <project name="vcos_include"                      path="vcos/include" />
+  <project name="vcos_kernel_nuttx"                 path="vcos/kernel/nuttx" />
+  <project name="vcos_examples"                     path="vcos/examples" />
+  <project name="vcos_external"                     path="vcos/external" />
+  <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
+  <project name="vcos_vendor_semidrive"             path="vcos/vendor/semidrive" />
+  <project name="vcos"                              path="vcos/docs" />
+
+  <!-- vbs open project repos -->
+  <project name="vbslite_build"                     path="vbs/vbslite/build" >
+      <linkfile src="make/root.mk" dest="vbs/vbslite/Makefile" />
+  </project>
+  <project name="vbslite_mvbs"                      path="vbs/vbslite/mvbs" >
+      <linkfile src="." dest="vcos/external/mvbs" />
+  </project>
+  <project name="vbslite_tools"                     path="vbs/vbslite/tools" />
+  <project name="vbslite_examples"                  path="vbs/vbslite/examples" />
+  <project name="vbs"                               path="vbs/docs" />
+</manifest>

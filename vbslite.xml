@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>LiXiang VBSLite Develop Platform</notice>
+  <remote name="origin"
+          fetch="." />
+
+  <default remote="origin"
+           revision="master"
+           sync-j="8" />
+
+  <!-- VBSLite Build System -->
+  <project name="vbslite_build" path="build">
+          <linkfile src="make/root.mk" dest="Makefile" />
+  </project>
+ 
+  <!-- VBS Document -->
+  <project name="vbs" path="docs"/>
+
+  <!-- VBSLite Protocol Stack -->
+  <project name="vbslite_mvbs" path="mvbs"/>
+
+  <!-- VBSLite Tools -->
+  <project name="vbslite_tools" path="tools" />
+ 
+  <!-- VBSLite Application -->
+  <project name="vbslite_examples" path="examples"/>
+</manifest>

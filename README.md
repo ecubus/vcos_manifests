@@ -1,39 +1,50 @@
-# manifests
+# manifests代码仓库说明
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 1. 代码仓库简介
+Manifest（清单文件）是软件开发中用于管理多仓库项目的核心配置文件，主要用于定义代码库的组成结构和依赖关系。在大型项目（如 Android 开源项目 AOSP）中，通常需要协同管理数十甚至数百个独立的 Git 仓库，而 Manifest 文件（如 default.xml）则通过统一的规则声明这些仓库的地址、分支、版本以及同步方式，确保整个项目能保持一致性和可复现性
 
-#### 软件架构
-软件架构说明
+理想星环OS（HaloOS）是理想汽车自主研发的整车级开源操作系统，包括了像智能车控OS（VCOS）、通信中间件（VBS）、智能驾驶OS（ADOS）等多个子系统。通过不同的xml文件可以选择下载理想开源项目中全部仓库或者指定子系统的仓库
 
+## 2. 代码目录
+manifests 源代码在 haloosspace/.repo/manifests 目录下，目录结构如下图所示
+```
+haloosspace
+└── .repo
+    └── manifests        # manifests 仓库
+        ├── default.xml  # 理想开源项目中全部仓库
+        ├── vbslite.xml  # 通信中间件（VBS）子系统的全部仓库
+        ├── vcos.xml     # 智能车控OS（VCOS）子系统的全部仓库
+        └── {other}.xml  # 其它子系统，待补充
+```
 
-#### 安装教程
+## 3. 仓库使用入门
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+**Manifest文件列表：**
+|文件名|功能|
+|-|-|
+|default.xml|理想开源项目中全部仓库|
+|vbslite.xml|通信中间件（VBS）子系统的全部仓库|
+|vcos.xml|智能车控OS（VCOS）子系统的全部仓库|
+|{other}.xml|其它子系统，待补充|
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+**代码下载：**
+```bash
+## repo 固定下载代码格式 ##
+repo init -u <manifest URL> -b <branch name> -m <manifest.xml>
+repo sync
+```
+```bash
+## HaloOS项目全量仓库下载 ##
+repo init -u git@gitee.com:haloos/manifests.git -b master -m default.xml
+repo sync
+```
+```bash
+## VBS子系统全量仓库下载 ##
+repo init -u git@gitee.com:haloos/manifests.git -b master -m vbslite.xml
+repo sync
+```
+```bash
+## VCOS子系统全量仓库下载 ##
+repo init -u git@gitee.com:haloos/manifests.git -b master -m vcos.xml
+repo sync
+```
