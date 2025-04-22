@@ -7,9 +7,7 @@
 
   <!-- haloos common repos -->
   <project name="apps_rt_demo"                      path="apps/rt_demo" />
-  </project>
   <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" />
-  </project>
   <project name="tools_halo_trace"                  path="tools/halo_trace"  />
 
   <!-- vcos open project repos -->
@@ -36,5 +34,4 @@
 
   <!-- vbs open project repos -->
   <project name="vbslite_mvbs"                      path="vbs/vbslite/mvbs" />
-  </project>
 </manifest>
