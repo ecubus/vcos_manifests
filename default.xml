@@ -12,16 +12,21 @@
   <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" />
   <project name="build"                             path="build" />
   <project name="tools_halo_trace"                  path="tools/halo_trace" />
+  <project name="tools_common"                      path="tools/common" />
 
   <!-- vcos open project repos -->
   <project name="vcos_components"                   path="vcos/components" />
   <project name="vcos_components_runtime"           path="vcos/components/runtime" />
   <project name="vcos_components_communication"     path="vcos/components/communication" />
   <project name="vcos_components_configs"           path="vcos/components/configs" />
+  <project name="vcos_components_fusa"              path="vcos/components/fusa" />
   <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" />
   <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
   <project name="vcos_components_memory"            path="vcos/components/memory" />
   <project name="vcos_components_include"           path="vcos/components/include" />
+  <project name="vcos_components_system_services"   path="vcos/components/system_services" />
+  <project name="vcos_components_system_services_time"               path="vcos/components/system_services/time" />
+  <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
   <project name="vcos_apps"                         path="vcos/apps" />
   <project name="vcos_build"                        path="vcos/build" />
   <project name="vcos_drivers"                      path="vcos/drivers" />
@@ -30,6 +35,10 @@
   <project name="vcos_include"                      path="vcos/include" />
   <project name="vcos_kernel_nuttx"                 path="vcos/kernel/nuttx" />
   <project name="vcos_examples"                     path="vcos/examples" />
+  <project name="vcos_examples_nm_demo"             path="vcos/examples/nm_demo" />
+  <project name="vcos_examples_multicore_com_demo"  path="vcos/examples/multicore_com_demo" />
+  <project name="vcos_examples_isolate_demo"        path="vcos/examples/isolate_demo" />
+  <project name="vcos_examples_tsyn_demo"           path="vcos/examples/tsyn_demo" />
   <project name="vcos_external"                     path="vcos/external" />
   <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
   <project name="vcos_vendor_semidrive"             path="vcos/vendor/semidrive" />
