@@ -10,6 +10,7 @@
   <!-- haloos common repos -->
   <project name="apps_rt_demo"                      path="apps/rt_demo" />
   <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" />
+  <project name="apps_isolate_demo"                 path="apps/isolate_demo" />
   <project name="build"                             path="build" />
   <project name="tools_halo_trace"                  path="tools/halo_trace" />
   <project name="tools_common"                      path="tools/common" />
@@ -37,7 +38,6 @@
   <project name="vcos_examples"                     path="vcos/examples" />
   <project name="vcos_examples_nm_demo"             path="vcos/examples/nm_demo" />
   <project name="vcos_examples_multicore_com_demo"  path="vcos/examples/multicore_com_demo" />
-  <project name="vcos_examples_isolate_demo"        path="vcos/examples/isolate_demo" />
   <project name="vcos_examples_tsyn_demo"           path="vcos/examples/tsyn_demo" />
   <project name="vcos_external"                     path="vcos/external" />
   <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
