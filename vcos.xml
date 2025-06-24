@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-  <notice>Open HALOOS From LiXiang</notice>
+  <notice>LiXiang VCOS Develop Platform</notice>
   <remote fetch="." name="origin" />
   <default remote="origin" revision="master" sync-j="8" />
 

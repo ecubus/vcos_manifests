@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <notice>LiXiang ADOS Develop Platform</notice>
+  <remote fetch="." name="origin" />
+  <default remote="origin" revision="master" sync-j="8" />
+
+  <!-- ados open project repos -->
+  <project name="ados_kernel"                   path="ados/kernel" />
+
+</manifest>
