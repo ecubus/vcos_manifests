@@ -6,6 +6,7 @@
   <default remote="origin" revision="master" sync-j="8" />
 
   <!-- ados open project repos -->
+  <project name="ados"                          path="ados/docs" />
   <project name="ados_kernel"                   path="ados/kernel" />
 
 </manifest>
