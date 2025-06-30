@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <notice>LiXiang VBS Develop Platform</notice>
-  <remote fetch="." name="origin" review="http://gerrit.it.chehejia.com/srdg/os/haloos" />
+  <remote fetch="." name="origin" />
   <default remote="origin" revision="master" sync-j="8" />
 
   <!-- vbs vbslite open project repos -->
