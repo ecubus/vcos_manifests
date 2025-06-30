@@ -15,8 +15,9 @@ haloosspace
 └── .repo
     └── manifests        # manifests 仓库
         ├── default.xml  # 理想开源项目中全部仓库
-        ├── vbslite.xml  # 通信中间件（VBS）子系统的全部仓库
+        ├── vbs.xml      # 通信中间件（VBS）子系统的全部仓库
         ├── vcos.xml     # 智能车控OS（VCOS）子系统的全部仓库
+        ├── ados.xml     # 辅助驾驶OS（ADOS）子系统的全部仓库
         └── {other}.xml  # 其它子系统，待补充
 ```
 
@@ -27,8 +28,9 @@ haloosspace
 |文件名|功能|
 |---|---|
 |default.xml|理想开源项目中全部仓库|
-|vbslite.xml|通信中间件（VBS）子系统的全部仓库|
+|vbs.xml|通信中间件（VBS）子系统的全部仓库|
 |vcos.xml|智能车控OS（VCOS）子系统的全部仓库|
+|ados.xml|辅助驾驶OS（ADOS）子系统的全部仓库|
 |{other}.xml|其它子系统，待补充|
 
 **代码下载：**
@@ -47,12 +49,18 @@ repo sync
 
 ```bash
 ## VBS子系统全量仓库下载 ##
-repo init -u git@gitee.com:haloos/manifests.git -b master -m vbslite.xml
+repo init -u git@gitee.com:haloos/manifests.git -b master -m vbs.xml
 repo sync
 ```
 
 ```bash
 ## VCOS子系统全量仓库下载 ##
 repo init -u git@gitee.com:haloos/manifests.git -b master -m vcos.xml
+repo sync
+```
+
+```bash
+## ADOS子系统全量仓库下载 ##
+repo init -u git@gitee.com:haloos/manifests.git -b master -m ados.xml
 repo sync
 ```

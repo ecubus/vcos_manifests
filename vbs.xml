@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>LiXiang VBS Develop Platform</notice>
+  <remote fetch="." name="origin" review="http://gerrit.it.chehejia.com/srdg/os/haloos" />
+  <default remote="origin" revision="master" sync-j="8" />
+
+  <!-- vbs vbslite open project repos -->
+  <project name="vbs/vbslite/build"                 path="vbs/vbslite/build" >
+          <linkfile src="make/root.mk" dest="vbs/vbslite/Makefile" />
+  </project>
+  <project name="vbs" path="docs"/>
+  <project name="vbslite_mvbs" path="mvbs"/>
+  <project name="vbslite_tools" path="tools" />
+  <project name="vbslite_examples" path="examples"/>
+
+  <!-- vbs vbspro open project repos -->  <!-- vbs vbspro open project repos -->
+  <!-- vbs vbspro open project repos -->
+  <project name="vbspro_build"                      path="vbs/vbspro/build" />
+  <project name="vbspro_examples"                   path="vbs/vbspro/examples" />
+  <project name="vbspro_framework"                  path="vbs/vbspro/framework" />
+  <project name="vbspro_dsf"                        path="vbs/vbspro/dsf" />
+  <project name="vbspro_dsf_src_unimem"             path="vbs/vbspro/dsf/src/unimem" />
+  <project name="vbspro_evbs"                       path="vbs/vbspro/evbs" />
+  <project name="vbspro_thirdparty"                 path="vbs/vbspro/thirdparty" />
+  <project name="vbspro_tools_daemon"               path="vbs/vbspro/tools/daemon" />
+  <project name="vbspro_tools_idlgen"               path="vbs/vbspro/tools/idlgen" />
+  <project name="vbspro_utils"                      path="vbs/vbspro/utils" />
+  <project name="vbspro_rpc"                        path="vbs/vbspro/rpc" />
+  <project name="vbspro_vbsauth"                    path="vbs/vbspro/vbsauth" />
+</manifest>
