@@ -5,13 +5,13 @@
   <default remote="origin" revision="master" sync-j="8" />
 
   <!-- vbs vbslite open project repos -->
-  <project name="vbs/vbslite/build"                 path="vbs/vbslite/build" >
+  <project name="vbslite_build"                 path="vbs/vbslite/build" >
           <linkfile src="make/root.mk" dest="vbs/vbslite/Makefile" />
   </project>
   <project name="vbs" path="docs"/>
-  <project name="vbslite_mvbs" path="mvbs"/>
-  <project name="vbslite_tools" path="tools" />
-  <project name="vbslite_examples" path="examples"/>
+  <project name="vbslite_mvbs" path="vbs/vbslite/mvbs"/>
+  <project name="vbslite_tools" path="vbs/vbslite/tools" />
+  <project name="vbslite_examples" path="vbs/vbslite/examples"/>
 
   <!-- vbs vbspro open project repos -->
   <project name="vbspro_build"                      path="vbs/vbspro/build" >
