@@ -50,4 +50,8 @@
   <project name="vbslite_tools"                     path="vbs/vbslite/tools" />
   <project name="vbslite_examples"                  path="vbs/vbslite/examples" />
   <project name="vbs"                               path="vbs/docs" />
+
+  <!-- ados open project repos -->
+  <project name="ados"                              path="ados/docs" />
+  <project name="ados_kernel"                       path="ados/kernel" />
 </manifest>
