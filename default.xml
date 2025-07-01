@@ -26,6 +26,7 @@
   <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
   <project name="vcos_components_memory"            path="vcos/components/memory" />
   <project name="vcos_components_include"           path="vcos/components/include" />
+  <project name="vcos_components_security"          path="vcos/components/security" />
   <project name="vcos_components_system_services"   path="vcos/components/system_services" />
   <project name="vcos_components_system_services_time"               path="vcos/components/system_services/time" />
   <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
