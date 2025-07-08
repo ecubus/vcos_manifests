@@ -34,6 +34,7 @@
   <project name="vcos_build"                        path="vcos/build" />
   <project name="vcos_drivers"                      path="vcos/drivers" />
   <project name="vcos_studio"                       path="vcos/vcos_studio" />
+  <project name="vcos_practice"                     path="vcos/vcos_practice" />
   <project name="vcos_tests"                        path="vcos/tests" />
   <project name="vcos_include"                      path="vcos/include" />
   <project name="vcos_kernel_nuttx"                 path="vcos/kernel/nuttx" />
