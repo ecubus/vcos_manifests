@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<manifest>
+  <remote name="origin" fetch="."/>
+  <default remote="origin" revision="master" sync-j="8"/>
+  <project name="docs" path="docs" revision="2ba4c364bea7ef8b7016dc34f4b95e72fa1f74f8" upstream="master"/>
+  <project name="apps_rt_demo" path="apps/rt_demo" revision="371e772907bf83f4d6f659ff4277cb770523d343" upstream="master"/>
+  <project name="apps_vbslite_demo" path="apps/vbslite_demo" revision="d6c5ae2beef1898d1f27b03def14c431a2915752" upstream="master"/>
+  <project name="build" path="build" revision="e012af32e580fa9ac941ce78f09f27944c522a55" upstream="master"/>
+  <project name="tools_halo_trace" path="tools/halo_trace" revision="76741dde4b6298999b00e3d378bfdfe1de86ed27" upstream="master"/>
+  <project name="vcos_components" path="vcos/components" revision="aba6e35b3d839c541a16e78881677d72c0187d05" upstream="master"/>
+  <project name="vcos_components_runtime" path="vcos/components/runtime" revision="aa975dfcde5cdb960ef0a460fbf54fe5a9554463" upstream="master"/>
+  <project name="vcos_components_communication" path="vcos/components/communication" revision="fbb349b8776384387d022bc7d59b2c1438985390" upstream="master"/>
+  <project name="vcos_components_configs" path="vcos/components/configs" revision="f8d126ee06070339ca1b233821ff176b51301e62" upstream="master"/>
+  <project name="vcos_components_rt_framework" path="vcos/components/rt_framework" revision="5d13b656852a94708c275b6b704212b30cb4199e" upstream="master"/>
+  <project name="vcos_components_maintaining" path="vcos/components/maintaining" revision="506e6493d40293f4d7a17c5bc48124fd5ae426fe" upstream="master"/>
+  <project name="vcos_components_memory" path="vcos/components/memory" revision="07419aa8da93ee39312ff14082fa890542303ed6" upstream="master"/>
+  <project name="vcos_components_include" path="vcos/components/include" revision="5004849681260cb4bd1c558563d229a99406cd3e" upstream="master"/>
+  <project name="vcos_apps" path="vcos/apps" revision="69c5a68bb502c99da6b45f435714dc3553071394" upstream="master"/>
+  <project name="vcos_build" path="vcos/build" revision="c559382ca03dfa5f4a161845b561f245895ea1b3" upstream="master"/>
+  <project name="vcos_drivers" path="vcos/drivers" revision="e491461ae178d58c8bd48025d2f0986563e8946c" upstream="master"/>
+  <project name="vcos_studio" path="vcos/vcos_studio" revision="92e2fa1bad7b40642541a76de4216612c52c3daf" upstream="master"/>
+  <project name="vcos_tests" path="vcos/tests" revision="9b6ee0768286a07aba245c7a6f8faad9491cb7d8" upstream="master"/>
+  <project name="vcos_include" path="vcos/include" revision="1a715c8d1fbfd6c05a283f69c4fb17d0348cabfa" upstream="master"/>
+  <project name="vcos_kernel_nuttx" path="vcos/kernel/nuttx" revision="dc0e8529c063438291d2207f0ae10ed28639243f" upstream="master"/>
+  <project name="vcos_examples" path="vcos/examples" revision="c33e35e7dff26fc9f4d04c663aeb56c9b28b17c4" upstream="master"/>
+  <project name="vcos_external" path="vcos/external" revision="2f26b7ba136d50f1a566a8f85448685a41a0bb25" upstream="master"/>
+  <project name="vcos_vendor_infineon" path="vcos/vendor/infineon" revision="c712f4c0ae634a56009292c63bce9f691ee1ab40" upstream="master"/>
+  <project name="vcos_vendor_semidrive" path="vcos/vendor/semidrive" revision="bd049a9d7ad7fa0c051b687a04e173e6fd248dd8" upstream="master"/>
+  <project name="vcos" path="vcos/docs" revision="bf4b10c4c94c5790fbf5c80b0938d99bb2aa7d73" upstream="master"/>
+  <project name="vbslite_build" path="vbs/vbslite/build" revision="b4d7dd0c888891cba274ba94357bcb0ccfe886cf" upstream="master"/>
+  <project name="vbslite_mvbs" path="vbs/vbslite/mvbs" revision="b0f1ce262becb0092f5ff95c6590c93a32528152" upstream="master"/>
+  <project name="vbslite_tools" path="vbs/vbslite/tools" revision="54c2ea2930a17f6d2e460fc40f8ce73bd90fb507" upstream="master"/>
+  <project name="vbslite_examples" path="vbs/vbslite/examples" revision="539d1993ab325c2d4cdbc96415ebf2ca5a8c2753" upstream="master"/>
+  <project name="vbs" path="vbs/docs" revision="c201bbb07e4c16b3627afa4664217c3164def7a7" upstream="master"/>
+  <project name="ados_kernel" path="ados/kernel" revision="41b222412985dc8410b88fb7a0fda87e6640d4df" upstream="master"/>
+</manifest>

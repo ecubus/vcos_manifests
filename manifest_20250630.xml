@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<manifest>
+  <remote name="origin" fetch="."/>
+  <default remote="origin" revision="master" sync-j="8"/>
+  <project name="docs" path="docs" revision="f979338c46623865314c07744158fcf4061c0ed9" upstream="master"/>
+  <project name="apps_rt_demo" path="apps/rt_demo" revision="bdc7ff2c9e2e45b18a45edd9919ecf6ca47f7791" upstream="master"/>
+  <project name="apps_vbslite_demo" path="apps/vbslite_demo" revision="b251318b167ee3302556c230c8c907b421a687be" upstream="master"/>
+  <project name="apps_isolate_demo" path="apps/isolate_demo" revision="8d1c3c68c8578f5b7a3c017e936bcfde6f798645" upstream="master"/>
+  <project name="apps_mempool_demo" path="apps/mempool_demo" revision="c6e5f81ce012550dddff4c3470d6d6f0f5a0b19c" upstream="master"/>
+  <project name="build" path="build" revision="c551618f05d0795741f2278436b5b93f9c9dde73" upstream="master"/>
+  <project name="tools_halo_trace" path="tools/halo_trace" revision="8ed994f667be8ea75cc3530751496556d0ab6e83" upstream="master"/>
+  <project name="tools_common" path="tools/common" revision="631aa93fde0fd50b0921231230c080e02f616f8c" upstream="master"/>
+  <project name="vcos_components" path="vcos/components" revision="452d3dba2daae42fe6752802df415062629f93b2" upstream="master"/>
+  <project name="vcos_components_runtime" path="vcos/components/runtime" revision="84e28e93150937d9aafd566d974e0a09509112a2" upstream="master"/>
+  <project name="vcos_components_communication" path="vcos/components/communication" revision="495f1b084969763144008e5a158f43379c039b65" upstream="master"/>
+  <project name="vcos_components_configs" path="vcos/components/configs" revision="8a53fd477fe52a21aadc3d5d3a428b08a1d9bd1e" upstream="master"/>
+  <project name="vcos_components_fusa" path="vcos/components/fusa" revision="3a4680cc9f7fa2cba7dd247da7e3057e907cd87f" upstream="master"/>
+  <project name="vcos_components_rt_framework" path="vcos/components/rt_framework" revision="82811aca3d8db588a8915cce4db4ec0d73a14a1a" upstream="master"/>
+  <project name="vcos_components_maintaining" path="vcos/components/maintaining" revision="ceb80485bea5aebb8f7a734b3d6c63742cec8474" upstream="master"/>
+  <project name="vcos_components_memory" path="vcos/components/memory" revision="450dd4bbd2bdc7c1258e3782f53f22cf985c42f9" upstream="master"/>
+  <project name="vcos_components_include" path="vcos/components/include" revision="523f65b7246f554fc1269c38ab6c97c67ae1f963" upstream="master"/>
+  <project name="vcos_components_system_services" path="vcos/components/system_services" revision="ffbbd98802e83c51454dbf403f11b27b39f143d1" upstream="master"/>
+  <project name="vcos_components_system_services_time" path="vcos/components/system_services/time" revision="0c33c3a95d6e76136d342739dc3ecf0a26a77993" upstream="master"/>
+  <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" revision="7dc5a5e874c9e206bbbc5dd34000e9ef05938bf3" upstream="master"/>
+  <project name="vcos_apps" path="vcos/apps" revision="24b1c19376b0eaced64dc15b27739a90682e9099" upstream="master"/>
+  <project name="vcos_build" path="vcos/build" revision="b8c9d0dd7b9a1f9c1737db385207a9db6572bb20" upstream="master"/>
+  <project name="vcos_drivers" path="vcos/drivers" revision="b5736e84371b9c3ef7c5c67b0011712584f7a527" upstream="master"/>
+  <project name="vcos_studio" path="vcos/vcos_studio" revision="ffc48d0a7c2bbd2b8c8d5f18b70f4878e944642c" upstream="master"/>
+  <project name="vcos_tests" path="vcos/tests" revision="0cd51d563b21ec663e7fd2cf9b789be54a161db7" upstream="master"/>
+  <project name="vcos_include" path="vcos/include" revision="e9fd37072d6ae7e976d58a48f2519112c471f8c2" upstream="master"/>
+  <project name="vcos_kernel_nuttx" path="vcos/kernel/nuttx" revision="7eba030ba98bff621345ec6c04444d15c774fed0" upstream="master"/>
+  <project name="vcos_examples" path="vcos/examples" revision="65153a023f82b10e0dd01f580c05d7be082cfe67" upstream="master"/>
+  <project name="vcos_examples_nm_demo" path="vcos/examples/nm_demo" revision="7a4cd24db3b69c37ad844e671b9c6c73354b3f0c" upstream="master"/>
+  <project name="vcos_examples_multicore_com_demo" path="vcos/examples/multicore_com_demo" revision="10d697a6b748bc0fda7dafb7a74e66bd8dde2552" upstream="master"/>
+  <project name="vcos_examples_tsyn_demo" path="vcos/examples/tsyn_demo" revision="2b5a8d84c65738b43e521b74ed7efd71e1da6c5a" upstream="master"/>
+  <project name="vcos_external" path="vcos/external" revision="4d3ab296504bbf3612ffa05d5fbba090eac5fd2c" upstream="master"/>
+  <project name="vcos_vendor_infineon" path="vcos/vendor/infineon" revision="027254b39fd0fd6403695abf317a9021195ddc62" upstream="master"/>
+  <project name="vcos_vendor_semidrive" path="vcos/vendor/semidrive" revision="c03e51e8bb64f71d4552faa1367f222a6c3061d0" upstream="master"/>
+  <project name="vcos" path="vcos/docs" revision="e76776c3f5eb8468b45df30f00c93832d741bd36" upstream="master"/>
+  <project name="vbslite_build" path="vbs/vbslite/build" revision="b4d7dd0c888891cba274ba94357bcb0ccfe886cf" upstream="master"/>
+  <project name="vbslite_mvbs" path="vbs/vbslite/mvbs" revision="dc07cfb61167328eafa8c35607c272cd504b7de1" upstream="master"/>
+  <project name="vbslite_tools" path="vbs/vbslite/tools" revision="54c2ea2930a17f6d2e460fc40f8ce73bd90fb507" upstream="master"/>
+  <project name="vbslite_examples" path="vbs/vbslite/examples" revision="539d1993ab325c2d4cdbc96415ebf2ca5a8c2753" upstream="master"/>
+  <project name="vbs" path="vbs/docs" revision="eafa04bb413a4fc98a75465e1cbf703dc24461af" upstream="master"/>
+  <project name="vbspro_build" path="vbs/vbspro/build" revision="cab0f05581a9d2901100f7c3e9beac87a853f010" upstream="master"/>
+  <project name="vbspro_examples" path="vbs/vbspro/examples" revision="8b2556d2d89b09c8b285995d48b21588e3f798ab" upstream="master"/>
+  <project name="vbspro_framework" path="vbs/vbspro/framework" revision="9f8816503ae2b2285e3c2ad0f883bebd5b732f30" upstream="master"/>
+  <project name="vbspro_dsf" path="vbs/vbspro/dsf" revision="a7509dc880d98f34def8aac1380afec2072f31f3" upstream="master"/>
+  <project name="vbspro_dsf_src_unimem" path="vbs/vbspro/dsf/src/unimem" revision="7426e0a36f98b578d3c654d66ca35fc039d5f7f4" upstream="master"/>
+  <project name="vbspro_evbs" path="vbs/vbspro/evbs" revision="64406481f8d017f988f51dd7d0dcc50176b338ef" upstream="master"/>
+  <project name="vbspro_thirdparty" path="vbs/vbspro/thirdparty" revision="0f0517d71edf10c9d1a9788cefe8a74045ad775e" upstream="master"/>
+  <project name="vbspro_tools_daemon" path="vbs/vbspro/tools/daemon" revision="b8bde630040f63a8a2d45649120c95048b0e11e4" upstream="master"/>
+  <project name="vbspro_tools_idlgen" path="vbs/vbspro/tools/idlgen" revision="8dd61015b298afa4fb0a9dc777454d97aa44a09e" upstream="master"/>
+  <project name="vbspro_utils" path="vbs/vbspro/utils" revision="bdce7b9a465877c86d5211396d8de78e6e9128ef" upstream="master"/>
+  <project name="vbspro_rpc" path="vbs/vbspro/rpc" revision="63292fef70ec48ab7d0422d785532c8e30a8478c" upstream="master"/>
+  <project name="vbspro_vbsauth" path="vbs/vbspro/vbsauth" revision="19cd5fef5aae0c4911e9e88e09f91fd613115ad6" upstream="master"/>
+  <project name="ados" path="ados/docs" revision="a272f756b62d62617be197daed5055f424e64b58" upstream="master"/>
+  <project name="ados_kernel" path="ados/kernel" revision="bcfec1984094347c5c89f561d6c109b28f7db4b5" upstream="master"/>
+</manifest>
