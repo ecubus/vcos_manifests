@@ -31,6 +31,4 @@
   <project name="vbslite_mvbs" path="vbs/vbslite/mvbs" revision="b0f1ce262becb0092f5ff95c6590c93a32528152" upstream="master"/>
   <project name="vbslite_tools" path="vbs/vbslite/tools" revision="54c2ea2930a17f6d2e460fc40f8ce73bd90fb507" upstream="master"/>
   <project name="vbslite_examples" path="vbs/vbslite/examples" revision="539d1993ab325c2d4cdbc96415ebf2ca5a8c2753" upstream="master"/>
-  <project name="vbs" path="vbs/docs" revision="c201bbb07e4c16b3627afa4664217c3164def7a7" upstream="master"/>
-  <project name="ados_kernel" path="ados/kernel" revision="41b222412985dc8410b88fb7a0fda87e6640d4df" upstream="master"/>
 </manifest>
