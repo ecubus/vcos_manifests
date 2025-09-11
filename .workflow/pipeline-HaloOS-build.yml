@@ -16,7 +16,7 @@ triggers:
         - master
 stages:
   - name: stage-download-code
-    displayName: 代码下载
+    displayName: 代码下载及编译
     strategy: naturally
     trigger: auto
     executor:
@@ -43,31 +43,10 @@ stages:
           - cd gcode
           - repo init -u git@gitee.com:haloos/manifests.git -b master -m default.xml
           - repo sync
-        notify: []
-        strategy:
-          retry: '0'
-  - name: stage-build-code
-    displayName: 编译验证
-    strategy: naturally
-    trigger: auto
-    executor:
-      - chaobiao
-    steps:
-      - step: shell@agent
-        name: execute_build_code
-        displayName: Shell 脚本执行
-        hostGroupID:
-          ID: HaloOS-CI-test1
-          hostID:
-            - eac9b93d-10bf-4212-ad87-cde28874514d
-        script:
-          - '# 请在此输入您想执行的脚本'
-          - echo '===Start build code==='
-          - pwd
           - ls
-          - cd gcode/build
-          # - python vcos_build.py -app_name rt_demo -board_name a2g_tc397_5v_tft -maketool ninja -sim 0 -all
+          - cd build
           - python haloos_build.py -app_name rt_demo
+          - ''
         notify: []
         strategy:
           retry: '0'
