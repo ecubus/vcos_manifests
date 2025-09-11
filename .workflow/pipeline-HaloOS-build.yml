@@ -66,8 +66,8 @@ stages:
           - '# 请在此输入您想执行的脚本'
           - echo '===Start build code==='
           - pwd
-          - cd ${workspace}/gcode/build
-          - python haloos_build.py -app_name rt_demo
+          - cd gcode/vcos/build
+          - python vcos_build.py -app_name rt_demo -board_name a2g_tc397_5v_tft -maketool ninja -sim 0 -all
         notify: []
         strategy:
           retry: '0'
