@@ -57,10 +57,7 @@
   <project name="vbs"                               path="vbs/docs" />
 
   <!-- vbs vbspro open project repos -->
-  <project name="vbspro_build"                      path="vbs/vbspro/build" >
-	<linkfile src="CMakeLists.txt" dest="vbs/vbspro/CMakeLists.txt" />
-	<linkfile src="cmake-build.sh" dest="vbs/vbspro/cmake-build.sh" />
-  </project>
+  <project name="vbspro_build"                      path="vbs/vbspro/build" />
   <project name="vbspro_examples"                   path="vbs/vbspro/examples" />
   <project name="vbspro_framework"                  path="vbs/vbspro/framework" />
   <project name="vbspro_dsf"                        path="vbs/vbspro/dsf" />
