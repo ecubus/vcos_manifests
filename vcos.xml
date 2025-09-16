@@ -26,7 +26,6 @@
   <project name="vcos_components_include"           path="vcos/components/include" />
   <project name="vcos_components_security"          path="vcos/components/security" />
   <project name="vcos_components_system_services"   path="vcos/components/system_services" />
-  <project name="vcos_components_system_services_time"               path="vcos/components/system_services/time" />
   <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
   <project name="vcos_apps"                         path="vcos/apps" />
   <project name="vcos_build"                        path="vcos/build" />
@@ -39,7 +38,6 @@
   <project name="vcos_examples"                     path="vcos/examples" />
   <project name="vcos_examples_nm_demo"             path="vcos/examples/nm_demo" />
   <project name="vcos_examples_multicore_com_demo"  path="vcos/examples/multicore_com_demo" />
-  <project name="vcos_examples_tsyn_demo"           path="vcos/examples/tsyn_demo" />
   <project name="vcos_examples_diag_demo"           path="vcos/examples/diag_demo" />
   <project name="vcos_external"                     path="vcos/external" />
   <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
