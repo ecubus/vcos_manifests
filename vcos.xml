@@ -8,9 +8,10 @@
   <!-- haloos common repos -->
   <project name="apps_rt_demo"                      path="apps/rt_demo" />
   <project name="apps_vbslite_demo"                 path="apps/vbslite_demo" />
-  <project name="tools_halo_trace"                  path="tools/halo_trace"  />
   <project name="apps_isolate_demo"                 path="apps/isolate_demo" />
   <project name="apps_mempool_demo"                 path="apps/mempool_demo" />
+  <project name="build"                             path="build" />
+  <project name="tools_halo_trace"                  path="tools/halo_trace" />
   <project name="tools_common"                      path="tools/common" />
 
   <!-- vcos open project repos -->
