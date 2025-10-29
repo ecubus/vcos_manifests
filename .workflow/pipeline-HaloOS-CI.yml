@@ -29,7 +29,7 @@ stages:
         username: openhaloos
         password: chao@gitee.com
         tag: ${GITEE_PIPELINE_BUILD_NUMBER}
-        dockerfile: ./haloos_docker.dockerfile
+        dockerfile: ./
         context: ''
         artifacts: []
         isCache: false
