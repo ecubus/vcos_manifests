@@ -26,7 +26,7 @@ stages:
         displayName: 镜像构建
         type: account
         repository: https://gitee.com/chaobiao/haloos_ci_docker
-        username: openhaloos
+        username: chaobiao
         password: chao@gitee.com
         tag: ${GITEE_PIPELINE_BUILD_NUMBER}
         dockerfile: ./
