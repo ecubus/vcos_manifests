@@ -20,10 +20,8 @@ stages:
       - step: build@docker
         name: build_docker
         displayName: 镜像构建
-        type: account
-        repository: git@gitee.com:chaobiao/haloos_ci_docker.git
-        username: chaobiao
-        password: chao@gitee.com
+        type: cert
+        certificate: 7508ff30-9763-013e-0c8c-7288304a0235
         tag: ${GITEE_PIPELINE_BUILD_NUMBER}
         dockerfile: ./haloos_docker.dockerfile
         context: ''
