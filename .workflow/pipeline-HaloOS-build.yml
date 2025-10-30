@@ -2,7 +2,7 @@ version: '1.0'
 name: pipeline-HaloOS-build
 displayName: HaloOS编译验证
 triggers:
-  trigger: auto
+  trigger: manual
   push:
     branches:
       precise:
