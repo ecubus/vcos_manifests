@@ -2,15 +2,11 @@ version: '1.0'
 name: pipeline-HaloOS-CI
 displayName: HaloOS-CI
 triggers:
-  trigger: auto
+  trigger: manual
   push:
     branches:
       prefix:
         - develop
-      precise:
-        - master
-  pr:
-    branches:
       precise:
         - master
 stages:
@@ -25,7 +21,7 @@ stages:
         name: build_docker
         displayName: 镜像构建
         type: account
-        repository: https://gitee.com/chaobiao/haloos_ci_docker
+        repository: git@gitee.com:chaobiao/haloos_ci_docker.git
         username: chaobiao
         password: chao@gitee.com
         tag: ${GITEE_PIPELINE_BUILD_NUMBER}
