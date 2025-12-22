@@ -15,6 +15,7 @@
   <project name="build"                             path="build" />
   <project name="tools_halo_trace"                  path="tools/halo_trace" />
   <project name="tools_common"                      path="tools/common" />
+  <project name="tools_cicd"                        path="tools/cicd" />
 
   <!-- vcos open project repos -->
   <project name="vcos_components"                   path="vcos/components" />
@@ -45,6 +46,7 @@
   <project name="vcos_external"                     path="vcos/external" />
   <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
   <project name="vcos_vendor_semidrive"             path="vcos/vendor/semidrive" />
+  <project name="vcos_vendor_renesas"               path="vcos/vendor/renesas" />
   <project name="vcos"                              path="vcos/docs" />
 
   <!-- vbs open project repos -->
