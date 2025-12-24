@@ -44,6 +44,7 @@
   <project name="vcos_vendor_infineon"              path="vcos/vendor/infineon" />
   <project name="vcos_vendor_semidrive"             path="vcos/vendor/semidrive" />
   <project name="vcos_vendor_renesas"               path="vcos/vendor/renesas" />
+  <project name="vcos_vendor_nxp"                   path="vcos/vendor/nxp" />
   <project name="vcos"                              path="vcos/docs" />
 
   <!-- vbs open project repos -->
