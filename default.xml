@@ -15,6 +15,7 @@
   <project name="build"                             path="build" />
   <project name="tools_halo_trace"                  path="tools/halo_trace" />
   <project name="tools_common"                      path="tools/common" />
+  <project name="tools_cicd"                        path="tools/cicd" />
 
   <!-- vcos open project repos -->
   <project name="vcos_components"                   path="vcos/components" />
