@@ -1,66 +1,29 @@
-# manifests代码仓库说明
+# EcuBus HaloOS / VCOS manifests (PC)
 
-## 1. 代码仓库简介
+GitHub org forks for native PC / NuttX sim work. Unchanged projects still sync from Gitee `haloos`.
 
-Manifest（清单文件）是软件开发中用于管理多仓库项目的核心配置文件，主要用于定义代码库的组成结构和依赖关系。在大型项目（如 Android 开源项目 AOSP）中，通常需要协同管理数十甚至数百个独立的 Git 仓库，而 Manifest 文件（如 default.xml）则通过统一的规则声明这些仓库的地址、分支、版本以及同步方式，确保整个项目能保持一致性和可复现性
-
-理想星环OS（HaloOS）是理想汽车自主研发的整车级开源操作系统，包括了像智能车控OS（VCOS）、通信中间件（VBS）、辅助驾驶OS（ADOS）等多个子系统。通过不同的xml文件可以选择下载理想开源项目中全部仓库或者指定子系统的仓库
-
-## 2. 代码目录
-
-manifests 源代码在 haloosspace/.repo/manifests 目录下，目录结构如下图所示
+## Init
 
 ```bash
-haloosspace
-└── .repo
-    └── manifests        # manifests 仓库
-        ├── default.xml  # 理想开源项目中全部仓库
-        ├── vbs.xml      # 通信中间件（VBS）子系统的全部仓库
-        ├── vcos.xml     # 智能车控OS（VCOS）子系统的全部仓库
-        ├── ados.xml     # 辅助驾驶OS（ADOS）子系统的全部仓库
-        └── {other}.xml  # 其它子系统，待补充
+repo init -u https://github.com/ecubus/vcos_manifests.git -b frankie/pc -m default.xml
+repo sync -j8
 ```
 
-## 3. 仓库使用入门
-
-**Manifest文件列表：**
-
-|文件名|功能|
-|---|---|
-|default.xml|理想开源项目中全部仓库|
-|vbs.xml|通信中间件（VBS）子系统的全部仓库|
-|vcos.xml|智能车控OS（VCOS）子系统的全部仓库|
-|ados.xml|辅助驾驶OS（ADOS）子系统的全部仓库|
-|{other}.xml|其它子系统，待补充|
-
-**代码下载：**
+Or SSH:
 
 ```bash
-## repo 固定下载代码格式 ##
-repo init -u <manifest URL> -b <branch name> -m <manifest.xml>
-repo sync
+repo init -u git@github.com:ecubus/vcos_manifests.git -b frankie/pc -m default.xml
+repo sync -j8
 ```
 
-```bash
-## HaloOS项目全量仓库下载 ##
-repo init -u git@gitee.com:haloos/manifests.git -b master -m default.xml
-repo sync
-```
+## Projects on `ecubus` @ `frankie/pc`
 
-```bash
-## VBS子系统全量仓库下载 ##
-repo init -u git@gitee.com:haloos/manifests.git -b master -m vbs.xml
-repo sync
-```
+| path | GitHub repo |
+| --- | --- |
+| `vcos/build` | [ecubus/vcos_build](https://github.com/ecubus/vcos_build) |
+| `vcos/components/memory` | [ecubus/vcos_components_memory](https://github.com/ecubus/vcos_components_memory) |
+| `vcos/apps` | [ecubus/vcos_apps](https://github.com/ecubus/vcos_apps) |
+| `vcos/examples` | [ecubus/vcos_examples](https://github.com/ecubus/vcos_examples) |
+| `vcos/vendor/ecubus` | [ecubus/EcuBus-Mcal](https://github.com/ecubus/EcuBus-Mcal) |
 
-```bash
-## VCOS子系统全量仓库下载 ##
-repo init -u git@gitee.com:haloos/manifests.git -b master -m vcos.xml
-repo sync
-```
-
-```bash
-## ADOS子系统全量仓库下载 ##
-repo init -u git@gitee.com:haloos/manifests.git -b master -m ados.xml
-repo sync
-```
+See `vcos/build/PC_BUILD.md` after sync for the host build command.
