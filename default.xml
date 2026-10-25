@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-  <notice>Open HALOOS From LiXiang</notice>
-  <remote fetch="." name="origin" />
-  <default remote="origin" revision="master" sync-j="8" />
+  <notice>EcuBus HaloOS/VCOS PC fork (ecubus org) — base HaloOS + frankie/pc overrides</notice>
+  <!-- Unmodified HaloOS projects stay on Gitee; PC forks on GitHub ecubus. -->
+  <remote fetch="https://gitee.com/haloos/" name="haloos" />
+  <remote fetch="https://github.com/ecubus/" name="ecubus" />
+  <default remote="haloos" revision="master" sync-j="8" />
 
   <!-- haloos introduction repo -->
   <project name="docs"                              path="docs" />
@@ -19,27 +21,27 @@
 
   <!-- vcos open project repos -->
   <project name="vcos_components"                   path="vcos/components" />
-  <project name="vcos_components_runtime"           path="vcos/components/runtime" />
-  <project name="vcos_components_communication"     path="vcos/components/communication" />
+  <project name="vcos_components_runtime"           path="vcos/components/runtime" remote="ecubus" revision="frankie/pc" />
+  <project name="vcos_components_communication"     path="vcos/components/communication" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_configs"           path="vcos/components/configs" />
   <project name="vcos_components_diagnostics"       path="vcos/components/diagnostics" />
   <project name="vcos_components_fusa"              path="vcos/components/fusa" />
-  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" />
+  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
-  <project name="vcos_components_memory"            path="vcos/components/memory" />
+  <project name="vcos_components_memory"            path="vcos/components/memory" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_include"           path="vcos/components/include" />
   <project name="vcos_components_security"          path="vcos/components/security" />
   <project name="vcos_components_system_services"   path="vcos/components/system_services" />
   <project name="vcos_components_system_services_service_management" path="vcos/components/system_services/service_management" />
-  <project name="vcos_apps"                         path="vcos/apps" />
-  <project name="vcos_build"                        path="vcos/build" />
+  <project name="vcos_apps"                         path="vcos/apps" remote="ecubus" revision="frankie/pc" />
+  <project name="vcos_build"                        path="vcos/build" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_drivers"                      path="vcos/drivers" />
   <project name="vcos_studio"                       path="vcos/vcos_studio" />
   <project name="vcos_practice"                     path="vcos/vcos_practice" />
   <project name="vcos_tests"                        path="vcos/tests" />
   <project name="vcos_include"                      path="vcos/include" />
   <project name="vcos_kernel_nuttx"                 path="vcos/kernel/nuttx" />
-  <project name="vcos_examples"                     path="vcos/examples" />
+  <project name="vcos_examples"                     path="vcos/examples" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_examples_nm_demo"             path="vcos/examples/nm_demo" />
   <project name="vcos_examples_multicore_com_demo"  path="vcos/examples/multicore_com_demo" />
   <project name="vcos_examples_diag_demo"           path="vcos/examples/diag_demo" />
@@ -49,6 +51,7 @@
   <project name="vcos_vendor_renesas"               path="vcos/vendor/renesas" />
   <project name="vcos_vendor_nxp"                   path="vcos/vendor/nxp" />
   <project name="vcos_vendor_flagchip"              path="vcos/vendor/flagchip" />
+  <project name="EcuBus-Mcal"                     path="vcos/vendor/ecubus" remote="ecubus" revision="frankie/pc" />
   <project name="vcos"                              path="vcos/docs" />
 
   <!-- vbs open project repos -->
