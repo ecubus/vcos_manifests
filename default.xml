@@ -21,12 +21,12 @@
 
   <!-- vcos open project repos -->
   <project name="vcos_components"                   path="vcos/components" />
-  <project name="vcos_components_runtime"           path="vcos/components/runtime" />
-  <project name="vcos_components_communication"     path="vcos/components/communication" />
+  <project name="vcos_components_runtime"           path="vcos/components/runtime" remote="ecubus" revision="frankie/pc" />
+  <project name="vcos_components_communication"     path="vcos/components/communication" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_configs"           path="vcos/components/configs" />
   <project name="vcos_components_diagnostics"       path="vcos/components/diagnostics" />
   <project name="vcos_components_fusa"              path="vcos/components/fusa" />
-  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" />
+  <project name="vcos_components_rt_framework"      path="vcos/components/rt_framework" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_maintaining"       path="vcos/components/maintaining" />
   <project name="vcos_components_memory"            path="vcos/components/memory" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_components_include"           path="vcos/components/include" />
