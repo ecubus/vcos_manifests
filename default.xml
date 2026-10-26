@@ -36,7 +36,7 @@
   <project name="vcos_apps"                         path="vcos/apps" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_build"                        path="vcos/build" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_drivers"                      path="vcos/drivers" />
-  <project name="vcos_studio"                       path="vcos/vcos_studio" />
+  <project name="vcos_studio"                       path="vcos/vcos_studio" remote="ecubus" revision="frankie/pc" />
   <project name="vcos_practice"                     path="vcos/vcos_practice" />
   <project name="vcos_tests"                        path="vcos/tests" />
   <project name="vcos_include"                      path="vcos/include" />
